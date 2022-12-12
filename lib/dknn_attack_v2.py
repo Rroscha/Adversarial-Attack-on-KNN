@@ -99,6 +99,10 @@ class DKNNAttackV2(object):
             are not found, return those inputs.
         """
 
+        self.guide_reps = {}
+        self.thres = None
+        self.coeff = None
+
         min_ = torch.tensor(0., device=self.device)
         max_ = torch.tensor(1., device=self.device)
         if max_linf is not None:
@@ -288,7 +292,14 @@ class DKNNAttackV2(object):
         # adversarial examples at each layer
         for l, layer in enumerate(self.layers):
             rep = reps[layer].view(batch_size, 1, -1)
-            dist = ((rep - self.guide_reps[layer]) ** 2).sum(2)
+
+            try:
+                dist = ((rep - self.guide_reps[layer]) ** 2).sum(2)
+            except Exception as e:
+                print(e)
+                continue
+
+
             fx = dist - self.thres[l]
             adv_loss[:, l] = F.relu(
                 self.coeff.to(self.device) * fx + 1e-5).sum(1)

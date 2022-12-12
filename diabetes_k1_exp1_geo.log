@@ -1,0 +1,44 @@
+[INFO 2022-12-12 22:57:03,817] 
+{'dataset': 'diabetes',
+ 'dataset_dir': './data/',
+ 'exp': 1,
+ 'gaussian': {'dim': 20,
+              'dist': 0.5,
+              'num_points': 12500,
+              'sd': 1.0,
+              'test_ratio': 0.2},
+ 'init_ub': True,
+ 'label_domain': (1, 7),
+ 'log_level': 20,
+ 'num_test': 200,
+ 'partial': False,
+ 'random': True,
+ 'seed': 1}
+[INFO 2022-12-12 22:57:03,818] 
+{'check_obj_steps': 200,
+ 'compute_dist_to_cell': True,
+ 'device': 'cpu',
+ 'div_counter': 8,
+ 'div_ratio': 0.999,
+ 'div_step': 10,
+ 'dtype': <class 'numpy.float32'>,
+ 'early_stop': True,
+ 'index': 'flat',
+ 'k': 1,
+ 'm': 20,
+ 'max_proj_iters': 2000,
+ 'max_proj_iters_verify': 10000,
+ 'method': 'gca',
+ 'neighbor_method': 'm_nearest',
+ 'save_1nn_nb': False,
+ 'time_limit': 120,
+ 'tol': 1e-07,
+ 'treat_facet_as_cell': False,
+ 'upperbound': 0.016822102,
+ 'use_potential': False}
+[INFO 2022-12-12 22:57:03,823] Training data shape: (568, 8)
+[INFO 2022-12-12 22:57:03,823] Test data shape: (200, 8)
+[INFO 2022-12-12 22:57:03,823] Setting up a quick attack for computing loose upperbound...
+[INFO 2022-12-12 22:57:03,837] Finding correctly classified samples for attacking...
+[INFO 2022-12-12 22:57:03,840] Ready to attack...
+[INFO 2022-12-12 22:57:03,840] Running GB-based version 2 attack...

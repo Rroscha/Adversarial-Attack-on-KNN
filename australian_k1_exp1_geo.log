@@ -1,0 +1,1023 @@
+[INFO 2022-12-12 22:49:57,395] 
+{'dataset': 'australian',
+ 'dataset_dir': './data/',
+ 'exp': 1,
+ 'gaussian': {'dim': 20,
+              'dist': 0.5,
+              'num_points': 12500,
+              'sd': 1.0,
+              'test_ratio': 0.2},
+ 'init_ub': True,
+ 'label_domain': (1, 7),
+ 'log_level': 20,
+ 'num_test': 200,
+ 'partial': False,
+ 'random': True,
+ 'seed': 1}
+[INFO 2022-12-12 22:49:57,395] 
+{'check_obj_steps': 200,
+ 'compute_dist_to_cell': True,
+ 'device': 'cpu',
+ 'div_counter': 8,
+ 'div_ratio': 0.999,
+ 'div_step': 10,
+ 'dtype': <class 'numpy.float32'>,
+ 'early_stop': True,
+ 'index': 'flat',
+ 'k': 1,
+ 'm': 20,
+ 'max_proj_iters': 2000,
+ 'max_proj_iters_verify': 10000,
+ 'method': 'gca',
+ 'neighbor_method': 'm_nearest',
+ 'save_1nn_nb': False,
+ 'time_limit': 120,
+ 'tol': 1e-07,
+ 'treat_facet_as_cell': False,
+ 'upperbound': inf,
+ 'use_potential': False}
+[INFO 2022-12-12 22:49:57,401] Training data shape: (490, 14)
+[INFO 2022-12-12 22:49:57,402] Test data shape: (200, 14)
+[INFO 2022-12-12 22:49:57,402] Setting up a quick attack for computing loose upperbound...
+[INFO 2022-12-12 22:49:57,413] Finding correctly classified samples for attacking...
+[INFO 2022-12-12 22:49:57,416] Ready to attack...
+[INFO 2022-12-12 22:49:57,416] Running GB-based version 2 attack...
+[INFO 2022-12-12 22:51:58,517] Check which x_adv is attacked successfully...
+[INFO 2022-12-12 22:51:58,574] Success rate of the heuristic attack (1): 1.00
+[INFO 2022-12-12 22:51:58,577] Founded upperbound: [2.85859674e-01 1.22950159e-05 1.64557829e-01 3.28117639e-01
+ 2.88646638e-01 5.35540208e-02 3.82990420e-01 3.55228662e-01
+ 4.36525226e-01 4.85755205e-01 2.66934801e-02 1.01001538e-01
+ 3.73079181e-01 6.47546910e-03 1.67391345e-01 4.60639894e-01
+ 6.32523596e-01 1.14724778e-01 2.38220915e-01 4.47999567e-01
+ 9.94530857e-01 2.91435748e-01 4.79157455e-02 3.41792673e-01
+ 3.58082443e-01 2.74675041e-01 5.26948154e-01 6.01218283e-01
+ 5.04894555e-01 3.79691243e-01 1.94255561e-01 5.75013340e-01
+ 1.91597596e-01 1.22836001e-01 3.05101693e-01 5.00333250e-01
+ 5.53048328e-02 1.10046603e-01 3.97944927e-01 2.11399317e-01
+ 9.78648216e-02 2.30320245e-01 6.10700905e-01 4.56297994e-02
+ 1.03810683e-01 2.17374310e-01 5.77804089e-01 7.75180995e-01
+ 4.82373446e-01 5.59743881e-01 1.88022181e-01 1.51839793e-01
+ 2.81976253e-01 2.81418204e-01 1.35665476e-01 4.50921655e-01
+ 2.94367760e-01 2.38397837e-01 3.95595670e-01 3.47677708e-01
+ 3.33339155e-01 3.03941190e-01 4.87468094e-01 4.89928603e-01
+ 1.31688729e-01 5.30357182e-01 4.52282965e-01 2.01415345e-01
+ 4.65676486e-01 1.78156242e-01 3.99116635e-01 2.79448152e-01
+ 2.27738589e-01 2.17006981e-01 4.20708597e-01 3.01682860e-01
+ 6.98724210e-01 2.93725878e-01 5.05573928e-01 2.45104611e-01
+ 5.11330247e-01 1.39971659e-01 2.19597608e-01 1.09318644e-01
+ 5.83938420e-01 5.03014505e-01 5.77186525e-01 4.92851198e-01
+ 2.62156397e-01 9.95824784e-02 2.04679459e-01 2.62858391e-01
+ 8.23535398e-02 3.95777434e-01 4.48725104e-01 3.64173114e-01
+ 2.92003006e-01 2.71433383e-01 5.48448682e-01 5.65183222e-01
+ 2.27425456e-01 4.09414977e-01 2.42137909e-01 2.32405648e-01
+ 1.96640864e-01 8.27415109e-01 3.03343594e-01 9.11225528e-02
+ 3.78128961e-02 3.68690252e-01 3.23606640e-01 4.61135387e-01
+ 7.22614586e-01 2.23473489e-01 4.15943831e-01 2.14408040e-01
+ 4.04324472e-01 3.18751812e-01 7.65440017e-02 1.75809294e-01
+ 1.29555985e-01 6.60560280e-02 4.67433959e-01 2.68164307e-01
+ 2.19573706e-01 5.02511144e-01 1.39990821e-01 5.24419904e-01
+ 2.00434342e-01 2.26704925e-01 6.87374128e-03 6.10587478e-01
+ 9.12573561e-02 2.81464338e-01 3.25441331e-01 4.22157496e-01
+ 4.38450165e-02 7.62852095e-03 2.23917454e-01 1.20649792e-01
+ 3.00821841e-01 2.85519511e-01 4.47128415e-01 2.91363239e-01
+ 6.60531580e-01 1.47707239e-01 2.16033921e-01 2.88404197e-01
+ 5.05934060e-01 4.30702448e-01 2.40786716e-01 1.44263715e-01
+ 2.21283168e-01 1.47856042e-01 6.63654923e-01 1.53164705e-02
+ 2.26766393e-01 1.85060933e-01 5.11807978e-01 2.45290041e-01
+ 2.23318294e-01 3.73313576e-01 7.48717368e-01 3.79951596e-01
+ 2.64611930e-01]
+[INFO 2022-12-12 22:51:58,577] Setting up Geo...
+[INFO 2022-12-12 22:51:58,578] Start running Geo...
+[INFO 2022-12-12 22:51:58,578] # ==================== SAMPLE 0 =================== #
+[INFO 2022-12-12 22:51:58,578] Upper bound: 0.2859
+[INFO 2022-12-12 22:51:59,306] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:51:59,307] FINISHED: main loop time: 0.73
+[INFO 2022-12-12 22:51:59,307] num cells visited: 48, num cells computed: 68
+[INFO 2022-12-12 22:51:59,307] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:51:59,307] returning the initial upperbound.
+[INFO 2022-12-12 22:51:59,307] # ==================== SAMPLE 1 =================== #
+[INFO 2022-12-12 22:51:59,307] Upper bound: 0.0000
+[INFO 2022-12-12 22:51:59,319] FINISHED: main loop time: 0.01
+[INFO 2022-12-12 22:51:59,319] num cells visited: 2, num cells computed: 2
+[INFO 2022-12-12 22:51:59,319] CODE 1: Success. Optimal adv cell found! Dist: 0.0000
+[INFO 2022-12-12 22:51:59,320] # ==================== SAMPLE 2 =================== #
+[INFO 2022-12-12 22:51:59,320] Upper bound: 0.1646
+[INFO 2022-12-12 22:51:59,349] FINISHED: main loop time: 0.03
+[INFO 2022-12-12 22:51:59,349] num cells visited: 3, num cells computed: 5
+[INFO 2022-12-12 22:51:59,349] CODE 1: Success. Optimal adv cell found! Dist: 0.1632
+[INFO 2022-12-12 22:51:59,349] # ==================== SAMPLE 3 =================== #
+[INFO 2022-12-12 22:51:59,349] Upper bound: 0.3281
+[INFO 2022-12-12 22:51:59,539] FINISHED: main loop time: 0.19
+[INFO 2022-12-12 22:51:59,539] num cells visited: 6, num cells computed: 20
+[INFO 2022-12-12 22:51:59,539] CODE 1: Success. Optimal adv cell found! Dist: 0.2888
+[INFO 2022-12-12 22:51:59,539] # ==================== SAMPLE 4 =================== #
+[INFO 2022-12-12 22:51:59,539] Upper bound: 0.2886
+[INFO 2022-12-12 22:51:59,645] FINISHED: main loop time: 0.11
+[INFO 2022-12-12 22:51:59,646] num cells visited: 10, num cells computed: 28
+[INFO 2022-12-12 22:51:59,646] CODE 1: Success. Optimal adv cell found! Dist: 0.2653
+[INFO 2022-12-12 22:51:59,646] # ==================== SAMPLE 5 =================== #
+[INFO 2022-12-12 22:51:59,646] Upper bound: 0.0536
+[INFO 2022-12-12 22:51:59,673] FINISHED: main loop time: 0.03
+[INFO 2022-12-12 22:51:59,673] num cells visited: 2, num cells computed: 3
+[INFO 2022-12-12 22:51:59,675] CODE 1: Success. Optimal adv cell found! Dist: 0.0505
+[INFO 2022-12-12 22:51:59,675] # ==================== SAMPLE 6 =================== #
+[INFO 2022-12-12 22:51:59,675] Upper bound: 0.3830
+[INFO 2022-12-12 22:51:59,936] FINISHED: main loop time: 0.26
+[INFO 2022-12-12 22:51:59,936] num cells visited: 35, num cells computed: 47
+[INFO 2022-12-12 22:51:59,936] CODE 1: Success. Optimal adv cell found! Dist: 0.3748
+[INFO 2022-12-12 22:51:59,936] # ==================== SAMPLE 7 =================== #
+[INFO 2022-12-12 22:51:59,936] Upper bound: 0.3552
+[INFO 2022-12-12 22:52:00,136] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:00,136] FINISHED: main loop time: 0.20
+[INFO 2022-12-12 22:52:00,136] num cells visited: 22, num cells computed: 34
+[INFO 2022-12-12 22:52:00,136] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:00,136] returning the initial upperbound.
+[INFO 2022-12-12 22:52:00,136] # ==================== SAMPLE 8 =================== #
+[INFO 2022-12-12 22:52:00,136] Upper bound: 0.4365
+[INFO 2022-12-12 22:52:00,299] FINISHED: main loop time: 0.16
+[INFO 2022-12-12 22:52:00,299] num cells visited: 17, num cells computed: 46
+[INFO 2022-12-12 22:52:00,299] CODE 1: Success. Optimal adv cell found! Dist: 0.2769
+[INFO 2022-12-12 22:52:00,299] # ==================== SAMPLE 9 =================== #
+[INFO 2022-12-12 22:52:00,300] Upper bound: 0.4858
+[INFO 2022-12-12 22:52:01,615] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:01,615] FINISHED: main loop time: 1.31
+[INFO 2022-12-12 22:52:01,615] num cells visited: 131, num cells computed: 224
+[INFO 2022-12-12 22:52:01,615] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:01,615] returning the initial upperbound.
+[INFO 2022-12-12 22:52:01,615] # ==================== SAMPLE 10 =================== #
+[INFO 2022-12-12 22:52:01,615] Upper bound: 0.0267
+[INFO 2022-12-12 22:52:01,620] FINISHED: main loop time: 0.01
+[INFO 2022-12-12 22:52:01,620] num cells visited: 2, num cells computed: 2
+[INFO 2022-12-12 22:52:01,620] CODE 1: Success. Optimal adv cell found! Dist: 0.0264
+[INFO 2022-12-12 22:52:01,620] # ==================== SAMPLE 11 =================== #
+[INFO 2022-12-12 22:52:01,620] Upper bound: 0.1010
+[INFO 2022-12-12 22:52:01,630] FINISHED: main loop time: 0.01
+[INFO 2022-12-12 22:52:01,631] num cells visited: 4, num cells computed: 9
+[INFO 2022-12-12 22:52:01,631] CODE 1: Success. Optimal adv cell found! Dist: 0.0978
+[INFO 2022-12-12 22:52:01,631] # ==================== SAMPLE 12 =================== #
+[INFO 2022-12-12 22:52:01,631] Upper bound: 0.3731
+[INFO 2022-12-12 22:52:01,730] FINISHED: main loop time: 0.10
+[INFO 2022-12-12 22:52:01,730] num cells visited: 28, num cells computed: 39
+[INFO 2022-12-12 22:52:01,730] CODE 1: Success. Optimal adv cell found! Dist: 0.3581
+[INFO 2022-12-12 22:52:01,730] # ==================== SAMPLE 13 =================== #
+[INFO 2022-12-12 22:52:01,730] Upper bound: 0.0065
+[INFO 2022-12-12 22:52:01,734] FINISHED: main loop time: 0.00
+[INFO 2022-12-12 22:52:01,734] num cells visited: 2, num cells computed: 2
+[INFO 2022-12-12 22:52:01,734] CODE 1: Success. Optimal adv cell found! Dist: 0.0049
+[INFO 2022-12-12 22:52:01,734] # ==================== SAMPLE 14 =================== #
+[INFO 2022-12-12 22:52:01,734] Upper bound: 0.1674
+[INFO 2022-12-12 22:52:01,738] FINISHED: main loop time: 0.00
+[INFO 2022-12-12 22:52:01,739] num cells visited: 2, num cells computed: 2
+[INFO 2022-12-12 22:52:01,739] CODE 1: Success. Optimal adv cell found! Dist: 0.1638
+[INFO 2022-12-12 22:52:01,739] # ==================== SAMPLE 15 =================== #
+[INFO 2022-12-12 22:52:01,739] Upper bound: 0.4606
+[INFO 2022-12-12 22:52:02,209] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:02,209] FINISHED: main loop time: 0.47
+[INFO 2022-12-12 22:52:02,209] num cells visited: 84, num cells computed: 112
+[INFO 2022-12-12 22:52:02,209] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:02,209] returning the initial upperbound.
+[INFO 2022-12-12 22:52:02,209] # ==================== SAMPLE 16 =================== #
+[INFO 2022-12-12 22:52:02,209] Upper bound: 0.6325
+[INFO 2022-12-12 22:52:02,311] FINISHED: main loop time: 0.10
+[INFO 2022-12-12 22:52:02,312] num cells visited: 32, num cells computed: 41
+[INFO 2022-12-12 22:52:02,312] CODE 1: Success. Optimal adv cell found! Dist: 0.4969
+[INFO 2022-12-12 22:52:02,312] # ==================== SAMPLE 17 =================== #
+[INFO 2022-12-12 22:52:02,312] Upper bound: 0.1147
+[INFO 2022-12-12 22:52:02,326] FINISHED: main loop time: 0.01
+[INFO 2022-12-12 22:52:02,326] num cells visited: 7, num cells computed: 11
+[INFO 2022-12-12 22:52:02,326] CODE 1: Success. Optimal adv cell found! Dist: 0.1142
+[INFO 2022-12-12 22:52:02,326] # ==================== SAMPLE 18 =================== #
+[INFO 2022-12-12 22:52:02,326] Upper bound: 0.2382
+[INFO 2022-12-12 22:52:02,341] FINISHED: main loop time: 0.02
+[INFO 2022-12-12 22:52:02,342] num cells visited: 6, num cells computed: 9
+[INFO 2022-12-12 22:52:02,342] CODE 1: Success. Optimal adv cell found! Dist: 0.2070
+[INFO 2022-12-12 22:52:02,342] # ==================== SAMPLE 19 =================== #
+[INFO 2022-12-12 22:52:02,342] Upper bound: 0.4480
+[INFO 2022-12-12 22:52:02,402] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:02,402] FINISHED: main loop time: 0.06
+[INFO 2022-12-12 22:52:02,402] num cells visited: 10, num cells computed: 38
+[INFO 2022-12-12 22:52:02,402] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:02,402] returning the initial upperbound.
+[INFO 2022-12-12 22:52:02,402] # ==================== SAMPLE 20 =================== #
+[INFO 2022-12-12 22:52:02,403] Upper bound: 0.9945
+[INFO 2022-12-12 22:52:02,449] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:02,450] FINISHED: main loop time: 0.05
+[INFO 2022-12-12 22:52:02,450] num cells visited: 15, num cells computed: 44
+[INFO 2022-12-12 22:52:02,450] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:02,450] returning the initial upperbound.
+[INFO 2022-12-12 22:52:02,450] # ==================== SAMPLE 21 =================== #
+[INFO 2022-12-12 22:52:02,450] Upper bound: 0.2914
+[INFO 2022-12-12 22:52:02,567] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:02,567] FINISHED: main loop time: 0.12
+[INFO 2022-12-12 22:52:02,567] num cells visited: 39, num cells computed: 64
+[INFO 2022-12-12 22:52:02,567] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:02,567] returning the initial upperbound.
+[INFO 2022-12-12 22:52:02,567] # ==================== SAMPLE 22 =================== #
+[INFO 2022-12-12 22:52:02,567] Upper bound: 0.0479
+[INFO 2022-12-12 22:52:02,577] FINISHED: main loop time: 0.01
+[INFO 2022-12-12 22:52:02,577] num cells visited: 4, num cells computed: 5
+[INFO 2022-12-12 22:52:02,577] CODE 1: Success. Optimal adv cell found! Dist: 0.0442
+[INFO 2022-12-12 22:52:02,577] # ==================== SAMPLE 23 =================== #
+[INFO 2022-12-12 22:52:02,577] Upper bound: 0.3418
+[INFO 2022-12-12 22:52:02,614] FINISHED: main loop time: 0.04
+[INFO 2022-12-12 22:52:02,614] num cells visited: 7, num cells computed: 18
+[INFO 2022-12-12 22:52:02,614] CODE 1: Success. Optimal adv cell found! Dist: 0.2521
+[INFO 2022-12-12 22:52:02,615] # ==================== SAMPLE 24 =================== #
+[INFO 2022-12-12 22:52:02,615] Upper bound: 0.3581
+[INFO 2022-12-12 22:52:02,748] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:02,748] FINISHED: main loop time: 0.13
+[INFO 2022-12-12 22:52:02,748] num cells visited: 32, num cells computed: 90
+[INFO 2022-12-12 22:52:02,748] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:02,748] returning the initial upperbound.
+[INFO 2022-12-12 22:52:02,748] # ==================== SAMPLE 25 =================== #
+[INFO 2022-12-12 22:52:02,748] Upper bound: 0.2747
+[INFO 2022-12-12 22:52:02,818] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:02,818] FINISHED: main loop time: 0.07
+[INFO 2022-12-12 22:52:02,818] num cells visited: 17, num cells computed: 41
+[INFO 2022-12-12 22:52:02,818] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:02,818] returning the initial upperbound.
+[INFO 2022-12-12 22:52:02,818] # ==================== SAMPLE 26 =================== #
+[INFO 2022-12-12 22:52:02,818] Upper bound: 0.5269
+[INFO 2022-12-12 22:52:03,705] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:03,705] FINISHED: main loop time: 0.89
+[INFO 2022-12-12 22:52:03,705] num cells visited: 172, num cells computed: 287
+[INFO 2022-12-12 22:52:03,705] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:03,705] returning the initial upperbound.
+[INFO 2022-12-12 22:52:03,705] # ==================== SAMPLE 27 =================== #
+[INFO 2022-12-12 22:52:03,705] Upper bound: 0.6012
+[INFO 2022-12-12 22:52:03,783] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:03,783] FINISHED: main loop time: 0.08
+[INFO 2022-12-12 22:52:03,783] num cells visited: 28, num cells computed: 33
+[INFO 2022-12-12 22:52:03,783] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:03,783] returning the initial upperbound.
+[INFO 2022-12-12 22:52:03,783] # ==================== SAMPLE 28 =================== #
+[INFO 2022-12-12 22:52:03,783] Upper bound: 0.5049
+[INFO 2022-12-12 22:52:03,894] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:03,895] FINISHED: main loop time: 0.11
+[INFO 2022-12-12 22:52:03,895] num cells visited: 30, num cells computed: 34
+[INFO 2022-12-12 22:52:03,895] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:03,895] returning the initial upperbound.
+[INFO 2022-12-12 22:52:03,895] # ==================== SAMPLE 29 =================== #
+[INFO 2022-12-12 22:52:03,895] Upper bound: 0.3797
+[INFO 2022-12-12 22:52:04,165] FINISHED: main loop time: 0.27
+[INFO 2022-12-12 22:52:04,165] num cells visited: 19, num cells computed: 35
+[INFO 2022-12-12 22:52:04,165] CODE 1: Success. Optimal adv cell found! Dist: 0.3727
+[INFO 2022-12-12 22:52:04,165] # ==================== SAMPLE 30 =================== #
+[INFO 2022-12-12 22:52:04,165] Upper bound: 0.1943
+[INFO 2022-12-12 22:52:04,198] FINISHED: main loop time: 0.03
+[INFO 2022-12-12 22:52:04,198] num cells visited: 9, num cells computed: 18
+[INFO 2022-12-12 22:52:04,198] CODE 1: Success. Optimal adv cell found! Dist: 0.1755
+[INFO 2022-12-12 22:52:04,198] # ==================== SAMPLE 31 =================== #
+[INFO 2022-12-12 22:52:04,198] Upper bound: 0.5750
+[INFO 2022-12-12 22:52:04,227] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:04,227] FINISHED: main loop time: 0.03
+[INFO 2022-12-12 22:52:04,227] num cells visited: 9, num cells computed: 23
+[INFO 2022-12-12 22:52:04,227] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:04,227] returning the initial upperbound.
+[INFO 2022-12-12 22:52:04,227] # ==================== SAMPLE 32 =================== #
+[INFO 2022-12-12 22:52:04,228] Upper bound: 0.1916
+[INFO 2022-12-12 22:52:04,240] FINISHED: main loop time: 0.01
+[INFO 2022-12-12 22:52:04,240] num cells visited: 3, num cells computed: 7
+[INFO 2022-12-12 22:52:04,240] CODE 1: Success. Optimal adv cell found! Dist: 0.1793
+[INFO 2022-12-12 22:52:04,240] # ==================== SAMPLE 33 =================== #
+[INFO 2022-12-12 22:52:04,240] Upper bound: 0.1228
+[INFO 2022-12-12 22:52:04,256] FINISHED: main loop time: 0.02
+[INFO 2022-12-12 22:52:04,256] num cells visited: 6, num cells computed: 10
+[INFO 2022-12-12 22:52:04,256] CODE 1: Success. Optimal adv cell found! Dist: 0.1181
+[INFO 2022-12-12 22:52:04,257] # ==================== SAMPLE 34 =================== #
+[INFO 2022-12-12 22:52:04,257] Upper bound: 0.3051
+[INFO 2022-12-12 22:52:04,378] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:04,379] FINISHED: main loop time: 0.12
+[INFO 2022-12-12 22:52:04,379] num cells visited: 40, num cells computed: 61
+[INFO 2022-12-12 22:52:04,379] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:04,379] returning the initial upperbound.
+[INFO 2022-12-12 22:52:04,379] # ==================== SAMPLE 35 =================== #
+[INFO 2022-12-12 22:52:04,379] Upper bound: 0.5003
+[INFO 2022-12-12 22:52:04,591] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:04,591] FINISHED: main loop time: 0.21
+[INFO 2022-12-12 22:52:04,592] num cells visited: 53, num cells computed: 106
+[INFO 2022-12-12 22:52:04,592] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:04,592] returning the initial upperbound.
+[INFO 2022-12-12 22:52:04,592] # ==================== SAMPLE 36 =================== #
+[INFO 2022-12-12 22:52:04,592] Upper bound: 0.0553
+[INFO 2022-12-12 22:52:04,607] FINISHED: main loop time: 0.02
+[INFO 2022-12-12 22:52:04,607] num cells visited: 5, num cells computed: 7
+[INFO 2022-12-12 22:52:04,607] CODE 1: Success. Optimal adv cell found! Dist: 0.0359
+[INFO 2022-12-12 22:52:04,607] # ==================== SAMPLE 37 =================== #
+[INFO 2022-12-12 22:52:04,607] Upper bound: 0.1100
+[INFO 2022-12-12 22:52:04,623] FINISHED: main loop time: 0.02
+[INFO 2022-12-12 22:52:04,623] num cells visited: 5, num cells computed: 7
+[INFO 2022-12-12 22:52:04,623] CODE 1: Success. Optimal adv cell found! Dist: 0.0749
+[INFO 2022-12-12 22:52:04,623] # ==================== SAMPLE 38 =================== #
+[INFO 2022-12-12 22:52:04,623] Upper bound: 0.3979
+[INFO 2022-12-12 22:52:04,855] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:04,855] FINISHED: main loop time: 0.23
+[INFO 2022-12-12 22:52:04,855] num cells visited: 78, num cells computed: 104
+[INFO 2022-12-12 22:52:04,855] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:04,855] returning the initial upperbound.
+[INFO 2022-12-12 22:52:04,855] # ==================== SAMPLE 39 =================== #
+[INFO 2022-12-12 22:52:04,856] Upper bound: 0.2114
+[INFO 2022-12-12 22:52:04,878] FINISHED: main loop time: 0.02
+[INFO 2022-12-12 22:52:04,878] num cells visited: 3, num cells computed: 11
+[INFO 2022-12-12 22:52:04,878] CODE 1: Success. Optimal adv cell found! Dist: 0.2049
+[INFO 2022-12-12 22:52:04,878] # ==================== SAMPLE 40 =================== #
+[INFO 2022-12-12 22:52:04,878] Upper bound: 0.0979
+[INFO 2022-12-12 22:52:04,887] FINISHED: main loop time: 0.01
+[INFO 2022-12-12 22:52:04,887] num cells visited: 3, num cells computed: 3
+[INFO 2022-12-12 22:52:04,887] CODE 1: Success. Optimal adv cell found! Dist: 0.0874
+[INFO 2022-12-12 22:52:04,887] # ==================== SAMPLE 41 =================== #
+[INFO 2022-12-12 22:52:04,887] Upper bound: 0.2303
+[INFO 2022-12-12 22:52:04,905] FINISHED: main loop time: 0.02
+[INFO 2022-12-12 22:52:04,906] num cells visited: 4, num cells computed: 21
+[INFO 2022-12-12 22:52:04,906] CODE 1: Success. Optimal adv cell found! Dist: 0.2218
+[INFO 2022-12-12 22:52:04,906] # ==================== SAMPLE 42 =================== #
+[INFO 2022-12-12 22:52:04,906] Upper bound: 0.6107
+[INFO 2022-12-12 22:52:04,999] FINISHED: main loop time: 0.09
+[INFO 2022-12-12 22:52:05,000] num cells visited: 27, num cells computed: 40
+[INFO 2022-12-12 22:52:05,000] CODE 1: Success. Optimal adv cell found! Dist: 0.5255
+[INFO 2022-12-12 22:52:05,000] # ==================== SAMPLE 43 =================== #
+[INFO 2022-12-12 22:52:05,000] Upper bound: 0.0456
+[INFO 2022-12-12 22:52:05,006] FINISHED: main loop time: 0.01
+[INFO 2022-12-12 22:52:05,007] num cells visited: 3, num cells computed: 3
+[INFO 2022-12-12 22:52:05,007] CODE 1: Success. Optimal adv cell found! Dist: 0.0349
+[INFO 2022-12-12 22:52:05,007] # ==================== SAMPLE 44 =================== #
+[INFO 2022-12-12 22:52:05,007] Upper bound: 0.1038
+[INFO 2022-12-12 22:52:05,011] FINISHED: main loop time: 0.00
+[INFO 2022-12-12 22:52:05,011] num cells visited: 2, num cells computed: 2
+[INFO 2022-12-12 22:52:05,011] CODE 1: Success. Optimal adv cell found! Dist: 0.0990
+[INFO 2022-12-12 22:52:05,011] # ==================== SAMPLE 45 =================== #
+[INFO 2022-12-12 22:52:05,011] Upper bound: 0.2174
+[INFO 2022-12-12 22:52:05,022] FINISHED: main loop time: 0.01
+[INFO 2022-12-12 22:52:05,023] num cells visited: 3, num cells computed: 17
+[INFO 2022-12-12 22:52:05,023] CODE 1: Success. Optimal adv cell found! Dist: 0.2107
+[INFO 2022-12-12 22:52:05,023] # ==================== SAMPLE 46 =================== #
+[INFO 2022-12-12 22:52:05,023] Upper bound: 0.5778
+[INFO 2022-12-12 22:52:05,230] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:05,231] FINISHED: main loop time: 0.21
+[INFO 2022-12-12 22:52:05,231] num cells visited: 33, num cells computed: 106
+[INFO 2022-12-12 22:52:05,231] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:05,231] returning the initial upperbound.
+[INFO 2022-12-12 22:52:05,231] # ==================== SAMPLE 47 =================== #
+[INFO 2022-12-12 22:52:05,231] Upper bound: 0.7752
+[INFO 2022-12-12 22:52:05,565] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:05,565] FINISHED: main loop time: 0.33
+[INFO 2022-12-12 22:52:05,565] num cells visited: 49, num cells computed: 135
+[INFO 2022-12-12 22:52:05,565] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:05,565] returning the initial upperbound.
+[INFO 2022-12-12 22:52:05,565] # ==================== SAMPLE 48 =================== #
+[INFO 2022-12-12 22:52:05,565] Upper bound: 0.4824
+[INFO 2022-12-12 22:52:05,715] FINISHED: main loop time: 0.15
+[INFO 2022-12-12 22:52:05,715] num cells visited: 32, num cells computed: 39
+[INFO 2022-12-12 22:52:05,715] CODE 1: Success. Optimal adv cell found! Dist: 0.4751
+[INFO 2022-12-12 22:52:05,715] # ==================== SAMPLE 49 =================== #
+[INFO 2022-12-12 22:52:05,715] Upper bound: 0.5597
+[INFO 2022-12-12 22:52:06,209] FINISHED: main loop time: 0.49
+[INFO 2022-12-12 22:52:06,209] num cells visited: 79, num cells computed: 125
+[INFO 2022-12-12 22:52:06,209] CODE 1: Success. Optimal adv cell found! Dist: 0.4951
+[INFO 2022-12-12 22:52:06,209] # ==================== SAMPLE 50 =================== #
+[INFO 2022-12-12 22:52:06,209] Upper bound: 0.1880
+[INFO 2022-12-12 22:52:06,224] FINISHED: main loop time: 0.01
+[INFO 2022-12-12 22:52:06,224] num cells visited: 3, num cells computed: 6
+[INFO 2022-12-12 22:52:06,225] CODE 1: Success. Optimal adv cell found! Dist: 0.1787
+[INFO 2022-12-12 22:52:06,225] # ==================== SAMPLE 51 =================== #
+[INFO 2022-12-12 22:52:06,225] Upper bound: 0.1518
+[INFO 2022-12-12 22:52:06,254] FINISHED: main loop time: 0.03
+[INFO 2022-12-12 22:52:06,254] num cells visited: 9, num cells computed: 15
+[INFO 2022-12-12 22:52:06,255] CODE 1: Success. Optimal adv cell found! Dist: 0.1410
+[INFO 2022-12-12 22:52:06,255] # ==================== SAMPLE 52 =================== #
+[INFO 2022-12-12 22:52:06,255] Upper bound: 0.2820
+[INFO 2022-12-12 22:52:06,335] FINISHED: main loop time: 0.08
+[INFO 2022-12-12 22:52:06,335] num cells visited: 19, num cells computed: 41
+[INFO 2022-12-12 22:52:06,335] CODE 1: Success. Optimal adv cell found! Dist: 0.2740
+[INFO 2022-12-12 22:52:06,335] # ==================== SAMPLE 53 =================== #
+[INFO 2022-12-12 22:52:06,335] Upper bound: 0.2814
+[INFO 2022-12-12 22:52:06,373] FINISHED: main loop time: 0.04
+[INFO 2022-12-12 22:52:06,374] num cells visited: 4, num cells computed: 14
+[INFO 2022-12-12 22:52:06,374] CODE 1: Success. Optimal adv cell found! Dist: 0.2716
+[INFO 2022-12-12 22:52:06,374] # ==================== SAMPLE 54 =================== #
+[INFO 2022-12-12 22:52:06,374] Upper bound: 0.1357
+[INFO 2022-12-12 22:52:06,378] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:06,378] FINISHED: main loop time: 0.00
+[INFO 2022-12-12 22:52:06,378] num cells visited: 2, num cells computed: 2
+[INFO 2022-12-12 22:52:06,378] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:06,378] returning the initial upperbound.
+[INFO 2022-12-12 22:52:06,378] # ==================== SAMPLE 55 =================== #
+[INFO 2022-12-12 22:52:06,378] Upper bound: 0.4509
+[INFO 2022-12-12 22:52:06,562] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:06,562] FINISHED: main loop time: 0.18
+[INFO 2022-12-12 22:52:06,562] num cells visited: 32, num cells computed: 103
+[INFO 2022-12-12 22:52:06,562] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:06,562] returning the initial upperbound.
+[INFO 2022-12-12 22:52:06,563] # ==================== SAMPLE 56 =================== #
+[INFO 2022-12-12 22:52:06,563] Upper bound: 0.2944
+[INFO 2022-12-12 22:52:06,671] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:06,671] FINISHED: main loop time: 0.11
+[INFO 2022-12-12 22:52:06,671] num cells visited: 35, num cells computed: 62
+[INFO 2022-12-12 22:52:06,671] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:06,671] returning the initial upperbound.
+[INFO 2022-12-12 22:52:06,671] # ==================== SAMPLE 57 =================== #
+[INFO 2022-12-12 22:52:06,671] Upper bound: 0.2384
+[INFO 2022-12-12 22:52:06,732] FINISHED: main loop time: 0.06
+[INFO 2022-12-12 22:52:06,732] num cells visited: 10, num cells computed: 27
+[INFO 2022-12-12 22:52:06,732] CODE 1: Success. Optimal adv cell found! Dist: 0.2056
+[INFO 2022-12-12 22:52:06,732] # ==================== SAMPLE 58 =================== #
+[INFO 2022-12-12 22:52:06,732] Upper bound: 0.3956
+[INFO 2022-12-12 22:52:06,933] FINISHED: main loop time: 0.20
+[INFO 2022-12-12 22:52:06,933] num cells visited: 36, num cells computed: 49
+[INFO 2022-12-12 22:52:06,933] CODE 1: Success. Optimal adv cell found! Dist: 0.3782
+[INFO 2022-12-12 22:52:06,933] # ==================== SAMPLE 59 =================== #
+[INFO 2022-12-12 22:52:06,933] Upper bound: 0.3477
+[INFO 2022-12-12 22:52:07,043] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:07,043] FINISHED: main loop time: 0.11
+[INFO 2022-12-12 22:52:07,043] num cells visited: 21, num cells computed: 38
+[INFO 2022-12-12 22:52:07,043] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:07,043] returning the initial upperbound.
+[INFO 2022-12-12 22:52:07,043] # ==================== SAMPLE 60 =================== #
+[INFO 2022-12-12 22:52:07,043] Upper bound: 0.3333
+[INFO 2022-12-12 22:52:07,112] FINISHED: main loop time: 0.07
+[INFO 2022-12-12 22:52:07,112] num cells visited: 17, num cells computed: 18
+[INFO 2022-12-12 22:52:07,112] CODE 1: Success. Optimal adv cell found! Dist: 0.3288
+[INFO 2022-12-12 22:52:07,112] # ==================== SAMPLE 61 =================== #
+[INFO 2022-12-12 22:52:07,112] Upper bound: 0.3039
+[INFO 2022-12-12 22:52:07,191] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:07,191] FINISHED: main loop time: 0.08
+[INFO 2022-12-12 22:52:07,191] num cells visited: 16, num cells computed: 41
+[INFO 2022-12-12 22:52:07,191] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:07,192] returning the initial upperbound.
+[INFO 2022-12-12 22:52:07,192] # ==================== SAMPLE 62 =================== #
+[INFO 2022-12-12 22:52:07,192] Upper bound: 0.4875
+[INFO 2022-12-12 22:52:07,481] FINISHED: main loop time: 0.29
+[INFO 2022-12-12 22:52:07,481] num cells visited: 67, num cells computed: 107
+[INFO 2022-12-12 22:52:07,481] CODE 1: Success. Optimal adv cell found! Dist: 0.4869
+[INFO 2022-12-12 22:52:07,481] # ==================== SAMPLE 63 =================== #
+[INFO 2022-12-12 22:52:07,481] Upper bound: 0.4899
+[INFO 2022-12-12 22:52:08,078] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:08,078] FINISHED: main loop time: 0.60
+[INFO 2022-12-12 22:52:08,079] num cells visited: 134, num cells computed: 213
+[INFO 2022-12-12 22:52:08,079] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:08,079] returning the initial upperbound.
+[INFO 2022-12-12 22:52:08,079] # ==================== SAMPLE 64 =================== #
+[INFO 2022-12-12 22:52:08,079] Upper bound: 0.1317
+[INFO 2022-12-12 22:52:08,100] FINISHED: main loop time: 0.02
+[INFO 2022-12-12 22:52:08,101] num cells visited: 5, num cells computed: 15
+[INFO 2022-12-12 22:52:08,101] CODE 1: Success. Optimal adv cell found! Dist: 0.1117
+[INFO 2022-12-12 22:52:08,101] # ==================== SAMPLE 65 =================== #
+[INFO 2022-12-12 22:52:08,101] Upper bound: 0.5304
+[INFO 2022-12-12 22:52:09,908] FINISHED: main loop time: 1.81
+[INFO 2022-12-12 22:52:09,908] num cells visited: 124, num cells computed: 206
+[INFO 2022-12-12 22:52:09,909] CODE 1: Success. Optimal adv cell found! Dist: 0.5290
+[INFO 2022-12-12 22:52:09,909] # ==================== SAMPLE 66 =================== #
+[INFO 2022-12-12 22:52:09,909] Upper bound: 0.4523
+[INFO 2022-12-12 22:52:10,408] FINISHED: main loop time: 0.50
+[INFO 2022-12-12 22:52:10,409] num cells visited: 106, num cells computed: 198
+[INFO 2022-12-12 22:52:10,409] CODE 1: Success. Optimal adv cell found! Dist: 0.4453
+[INFO 2022-12-12 22:52:10,409] # ==================== SAMPLE 67 =================== #
+[INFO 2022-12-12 22:52:10,409] Upper bound: 0.2014
+[INFO 2022-12-12 22:52:10,445] FINISHED: main loop time: 0.04
+[INFO 2022-12-12 22:52:10,446] num cells visited: 4, num cells computed: 14
+[INFO 2022-12-12 22:52:10,446] CODE 1: Success. Optimal adv cell found! Dist: 0.1797
+[INFO 2022-12-12 22:52:10,446] # ==================== SAMPLE 68 =================== #
+[INFO 2022-12-12 22:52:10,446] Upper bound: 0.4657
+[INFO 2022-12-12 22:52:10,986] FINISHED: main loop time: 0.54
+[INFO 2022-12-12 22:52:10,986] num cells visited: 116, num cells computed: 220
+[INFO 2022-12-12 22:52:10,986] CODE 1: Success. Optimal adv cell found! Dist: 0.4593
+[INFO 2022-12-12 22:52:10,986] # ==================== SAMPLE 69 =================== #
+[INFO 2022-12-12 22:52:10,986] Upper bound: 0.1782
+[INFO 2022-12-12 22:52:10,994] FINISHED: main loop time: 0.01
+[INFO 2022-12-12 22:52:10,994] num cells visited: 2, num cells computed: 2
+[INFO 2022-12-12 22:52:10,994] CODE 1: Success. Optimal adv cell found! Dist: 0.1740
+[INFO 2022-12-12 22:52:10,994] # ==================== SAMPLE 70 =================== #
+[INFO 2022-12-12 22:52:10,994] Upper bound: 0.3991
+[INFO 2022-12-12 22:52:11,100] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:11,100] FINISHED: main loop time: 0.11
+[INFO 2022-12-12 22:52:11,100] num cells visited: 23, num cells computed: 44
+[INFO 2022-12-12 22:52:11,100] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:11,100] returning the initial upperbound.
+[INFO 2022-12-12 22:52:11,100] # ==================== SAMPLE 71 =================== #
+[INFO 2022-12-12 22:52:11,100] Upper bound: 0.2794
+[INFO 2022-12-12 22:52:11,190] FINISHED: main loop time: 0.09
+[INFO 2022-12-12 22:52:11,191] num cells visited: 21, num cells computed: 38
+[INFO 2022-12-12 22:52:11,191] CODE 1: Success. Optimal adv cell found! Dist: 0.2608
+[INFO 2022-12-12 22:52:11,191] # ==================== SAMPLE 72 =================== #
+[INFO 2022-12-12 22:52:11,191] Upper bound: 0.2277
+[INFO 2022-12-12 22:52:11,235] FINISHED: main loop time: 0.04
+[INFO 2022-12-12 22:52:11,235] num cells visited: 13, num cells computed: 24
+[INFO 2022-12-12 22:52:11,236] CODE 1: Success. Optimal adv cell found! Dist: 0.2134
+[INFO 2022-12-12 22:52:11,236] # ==================== SAMPLE 73 =================== #
+[INFO 2022-12-12 22:52:11,236] Upper bound: 0.2170
+[INFO 2022-12-12 22:52:11,248] FINISHED: main loop time: 0.01
+[INFO 2022-12-12 22:52:11,249] num cells visited: 3, num cells computed: 6
+[INFO 2022-12-12 22:52:11,249] CODE 1: Success. Optimal adv cell found! Dist: 0.2139
+[INFO 2022-12-12 22:52:11,249] # ==================== SAMPLE 74 =================== #
+[INFO 2022-12-12 22:52:11,249] Upper bound: 0.4207
+[INFO 2022-12-12 22:52:11,289] FINISHED: main loop time: 0.04
+[INFO 2022-12-12 22:52:11,289] num cells visited: 13, num cells computed: 15
+[INFO 2022-12-12 22:52:11,289] CODE 1: Success. Optimal adv cell found! Dist: 0.3786
+[INFO 2022-12-12 22:52:11,289] # ==================== SAMPLE 75 =================== #
+[INFO 2022-12-12 22:52:11,290] Upper bound: 0.3017
+[INFO 2022-12-12 22:52:11,341] FINISHED: main loop time: 0.05
+[INFO 2022-12-12 22:52:11,341] num cells visited: 13, num cells computed: 17
+[INFO 2022-12-12 22:52:11,341] CODE 1: Success. Optimal adv cell found! Dist: 0.2887
+[INFO 2022-12-12 22:52:11,341] # ==================== SAMPLE 76 =================== #
+[INFO 2022-12-12 22:52:11,341] Upper bound: 0.6987
+[INFO 2022-12-12 22:52:12,077] FINISHED: main loop time: 0.74
+[INFO 2022-12-12 22:52:12,077] num cells visited: 106, num cells computed: 188
+[INFO 2022-12-12 22:52:12,077] CODE 1: Success. Optimal adv cell found! Dist: 0.6136
+[INFO 2022-12-12 22:52:12,077] # ==================== SAMPLE 77 =================== #
+[INFO 2022-12-12 22:52:12,077] Upper bound: 0.2937
+[INFO 2022-12-12 22:52:12,166] FINISHED: main loop time: 0.09
+[INFO 2022-12-12 22:52:12,166] num cells visited: 24, num cells computed: 44
+[INFO 2022-12-12 22:52:12,166] CODE 1: Success. Optimal adv cell found! Dist: 0.2824
+[INFO 2022-12-12 22:52:12,166] # ==================== SAMPLE 78 =================== #
+[INFO 2022-12-12 22:52:12,167] Upper bound: 0.5056
+[INFO 2022-12-12 22:52:13,876] FINISHED: main loop time: 1.71
+[INFO 2022-12-12 22:52:13,876] num cells visited: 185, num cells computed: 298
+[INFO 2022-12-12 22:52:13,876] CODE 1: Success. Optimal adv cell found! Dist: 0.5017
+[INFO 2022-12-12 22:52:13,877] # ==================== SAMPLE 79 =================== #
+[INFO 2022-12-12 22:52:13,877] Upper bound: 0.2451
+[INFO 2022-12-12 22:52:13,944] FINISHED: main loop time: 0.07
+[INFO 2022-12-12 22:52:13,944] num cells visited: 7, num cells computed: 25
+[INFO 2022-12-12 22:52:13,944] CODE 1: Success. Optimal adv cell found! Dist: 0.2380
+[INFO 2022-12-12 22:52:13,944] # ==================== SAMPLE 80 =================== #
+[INFO 2022-12-12 22:52:13,944] Upper bound: 0.5113
+[INFO 2022-12-12 22:52:14,069] FINISHED: main loop time: 0.12
+[INFO 2022-12-12 22:52:14,069] num cells visited: 30, num cells computed: 43
+[INFO 2022-12-12 22:52:14,069] CODE 1: Success. Optimal adv cell found! Dist: 0.4376
+[INFO 2022-12-12 22:52:14,069] # ==================== SAMPLE 81 =================== #
+[INFO 2022-12-12 22:52:14,069] Upper bound: 0.1400
+[INFO 2022-12-12 22:52:14,076] FINISHED: main loop time: 0.01
+[INFO 2022-12-12 22:52:14,076] num cells visited: 2, num cells computed: 2
+[INFO 2022-12-12 22:52:14,077] CODE 1: Success. Optimal adv cell found! Dist: 0.1371
+[INFO 2022-12-12 22:52:14,077] # ==================== SAMPLE 82 =================== #
+[INFO 2022-12-12 22:52:14,077] Upper bound: 0.2196
+[INFO 2022-12-12 22:52:14,107] FINISHED: main loop time: 0.03
+[INFO 2022-12-12 22:52:14,108] num cells visited: 5, num cells computed: 10
+[INFO 2022-12-12 22:52:14,108] CODE 1: Success. Optimal adv cell found! Dist: 0.1784
+[INFO 2022-12-12 22:52:14,108] # ==================== SAMPLE 83 =================== #
+[INFO 2022-12-12 22:52:14,108] Upper bound: 0.1093
+[INFO 2022-12-12 22:52:14,115] FINISHED: main loop time: 0.01
+[INFO 2022-12-12 22:52:14,115] num cells visited: 2, num cells computed: 2
+[INFO 2022-12-12 22:52:14,115] CODE 1: Success. Optimal adv cell found! Dist: 0.1035
+[INFO 2022-12-12 22:52:14,115] # ==================== SAMPLE 84 =================== #
+[INFO 2022-12-12 22:52:14,115] Upper bound: 0.5839
+[INFO 2022-12-12 22:52:14,561] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:14,561] FINISHED: main loop time: 0.45
+[INFO 2022-12-12 22:52:14,561] num cells visited: 92, num cells computed: 106
+[INFO 2022-12-12 22:52:14,561] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:14,561] returning the initial upperbound.
+[INFO 2022-12-12 22:52:14,561] # ==================== SAMPLE 85 =================== #
+[INFO 2022-12-12 22:52:14,561] Upper bound: 0.5030
+[INFO 2022-12-12 22:52:15,095] FINISHED: main loop time: 0.53
+[INFO 2022-12-12 22:52:15,095] num cells visited: 113, num cells computed: 171
+[INFO 2022-12-12 22:52:15,095] CODE 1: Success. Optimal adv cell found! Dist: 0.5009
+[INFO 2022-12-12 22:52:15,095] # ==================== SAMPLE 86 =================== #
+[INFO 2022-12-12 22:52:15,095] Upper bound: 0.5772
+[INFO 2022-12-12 22:52:15,165] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:15,165] FINISHED: main loop time: 0.07
+[INFO 2022-12-12 22:52:15,165] num cells visited: 30, num cells computed: 34
+[INFO 2022-12-12 22:52:15,165] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:15,166] returning the initial upperbound.
+[INFO 2022-12-12 22:52:15,166] # ==================== SAMPLE 87 =================== #
+[INFO 2022-12-12 22:52:15,166] Upper bound: 0.4929
+[INFO 2022-12-12 22:52:15,787] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:15,787] FINISHED: main loop time: 0.62
+[INFO 2022-12-12 22:52:15,788] num cells visited: 144, num cells computed: 229
+[INFO 2022-12-12 22:52:15,788] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:15,788] returning the initial upperbound.
+[INFO 2022-12-12 22:52:15,788] # ==================== SAMPLE 88 =================== #
+[INFO 2022-12-12 22:52:15,788] Upper bound: 0.2622
+[INFO 2022-12-12 22:52:15,833] FINISHED: main loop time: 0.05
+[INFO 2022-12-12 22:52:15,833] num cells visited: 9, num cells computed: 21
+[INFO 2022-12-12 22:52:15,833] CODE 1: Success. Optimal adv cell found! Dist: 0.2032
+[INFO 2022-12-12 22:52:15,833] # ==================== SAMPLE 89 =================== #
+[INFO 2022-12-12 22:52:15,833] Upper bound: 0.0996
+[INFO 2022-12-12 22:52:15,861] FINISHED: main loop time: 0.03
+[INFO 2022-12-12 22:52:15,861] num cells visited: 7, num cells computed: 19
+[INFO 2022-12-12 22:52:15,861] CODE 1: Success. Optimal adv cell found! Dist: 0.0991
+[INFO 2022-12-12 22:52:15,861] # ==================== SAMPLE 90 =================== #
+[INFO 2022-12-12 22:52:15,861] Upper bound: 0.2047
+[INFO 2022-12-12 22:52:15,871] FINISHED: main loop time: 0.01
+[INFO 2022-12-12 22:52:15,871] num cells visited: 3, num cells computed: 4
+[INFO 2022-12-12 22:52:15,871] CODE 1: Success. Optimal adv cell found! Dist: 0.1803
+[INFO 2022-12-12 22:52:15,871] # ==================== SAMPLE 91 =================== #
+[INFO 2022-12-12 22:52:15,871] Upper bound: 0.2629
+[INFO 2022-12-12 22:52:15,930] FINISHED: main loop time: 0.06
+[INFO 2022-12-12 22:52:15,930] num cells visited: 22, num cells computed: 40
+[INFO 2022-12-12 22:52:15,931] CODE 1: Success. Optimal adv cell found! Dist: 0.2414
+[INFO 2022-12-12 22:52:15,931] # ==================== SAMPLE 92 =================== #
+[INFO 2022-12-12 22:52:15,931] Upper bound: 0.0824
+[INFO 2022-12-12 22:52:15,940] FINISHED: main loop time: 0.01
+[INFO 2022-12-12 22:52:15,940] num cells visited: 3, num cells computed: 4
+[INFO 2022-12-12 22:52:15,940] CODE 1: Success. Optimal adv cell found! Dist: 0.0813
+[INFO 2022-12-12 22:52:15,940] # ==================== SAMPLE 93 =================== #
+[INFO 2022-12-12 22:52:15,940] Upper bound: 0.3958
+[INFO 2022-12-12 22:52:16,018] FINISHED: main loop time: 0.08
+[INFO 2022-12-12 22:52:16,019] num cells visited: 17, num cells computed: 18
+[INFO 2022-12-12 22:52:16,019] CODE 1: Success. Optimal adv cell found! Dist: 0.3828
+[INFO 2022-12-12 22:52:16,019] # ==================== SAMPLE 94 =================== #
+[INFO 2022-12-12 22:52:16,019] Upper bound: 0.4487
+[INFO 2022-12-12 22:52:16,135] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:16,136] FINISHED: main loop time: 0.12
+[INFO 2022-12-12 22:52:16,136] num cells visited: 34, num cells computed: 62
+[INFO 2022-12-12 22:52:16,136] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:16,136] returning the initial upperbound.
+[INFO 2022-12-12 22:52:16,136] # ==================== SAMPLE 95 =================== #
+[INFO 2022-12-12 22:52:16,136] Upper bound: 0.3642
+[INFO 2022-12-12 22:52:16,253] FINISHED: main loop time: 0.12
+[INFO 2022-12-12 22:52:16,253] num cells visited: 13, num cells computed: 27
+[INFO 2022-12-12 22:52:16,253] CODE 1: Success. Optimal adv cell found! Dist: 0.3154
+[INFO 2022-12-12 22:52:16,254] # ==================== SAMPLE 96 =================== #
+[INFO 2022-12-12 22:52:16,254] Upper bound: 0.2920
+[INFO 2022-12-12 22:52:16,475] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:16,475] FINISHED: main loop time: 0.22
+[INFO 2022-12-12 22:52:16,475] num cells visited: 30, num cells computed: 61
+[INFO 2022-12-12 22:52:16,475] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:16,475] returning the initial upperbound.
+[INFO 2022-12-12 22:52:16,475] # ==================== SAMPLE 97 =================== #
+[INFO 2022-12-12 22:52:16,475] Upper bound: 0.2714
+[INFO 2022-12-12 22:52:16,489] FINISHED: main loop time: 0.01
+[INFO 2022-12-12 22:52:16,489] num cells visited: 4, num cells computed: 6
+[INFO 2022-12-12 22:52:16,489] CODE 1: Success. Optimal adv cell found! Dist: 0.2576
+[INFO 2022-12-12 22:52:16,489] # ==================== SAMPLE 98 =================== #
+[INFO 2022-12-12 22:52:16,489] Upper bound: 0.5484
+[INFO 2022-12-12 22:52:16,910] FINISHED: main loop time: 0.42
+[INFO 2022-12-12 22:52:16,911] num cells visited: 95, num cells computed: 150
+[INFO 2022-12-12 22:52:16,911] CODE 1: Success. Optimal adv cell found! Dist: 0.5037
+[INFO 2022-12-12 22:52:16,911] # ==================== SAMPLE 99 =================== #
+[INFO 2022-12-12 22:52:16,911] Upper bound: 0.5652
+[INFO 2022-12-12 22:52:17,858] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:17,859] FINISHED: main loop time: 0.95
+[INFO 2022-12-12 22:52:17,859] num cells visited: 182, num cells computed: 285
+[INFO 2022-12-12 22:52:17,859] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:17,859] returning the initial upperbound.
+[INFO 2022-12-12 22:52:17,859] # ==================== SAMPLE 100 =================== #
+[INFO 2022-12-12 22:52:17,859] Upper bound: 0.2274
+[INFO 2022-12-12 22:52:17,885] FINISHED: main loop time: 0.03
+[INFO 2022-12-12 22:52:17,885] num cells visited: 8, num cells computed: 23
+[INFO 2022-12-12 22:52:17,885] CODE 1: Success. Optimal adv cell found! Dist: 0.2261
+[INFO 2022-12-12 22:52:17,886] # ==================== SAMPLE 101 =================== #
+[INFO 2022-12-12 22:52:17,886] Upper bound: 0.4094
+[INFO 2022-12-12 22:52:18,065] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:18,065] FINISHED: main loop time: 0.18
+[INFO 2022-12-12 22:52:18,065] num cells visited: 24, num cells computed: 85
+[INFO 2022-12-12 22:52:18,065] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:18,065] returning the initial upperbound.
+[INFO 2022-12-12 22:52:18,065] # ==================== SAMPLE 102 =================== #
+[INFO 2022-12-12 22:52:18,065] Upper bound: 0.2421
+[INFO 2022-12-12 22:52:18,096] FINISHED: main loop time: 0.03
+[INFO 2022-12-12 22:52:18,097] num cells visited: 6, num cells computed: 15
+[INFO 2022-12-12 22:52:18,097] CODE 1: Success. Optimal adv cell found! Dist: 0.2401
+[INFO 2022-12-12 22:52:18,097] # ==================== SAMPLE 103 =================== #
+[INFO 2022-12-12 22:52:18,097] Upper bound: 0.2324
+[INFO 2022-12-12 22:52:18,130] FINISHED: main loop time: 0.03
+[INFO 2022-12-12 22:52:18,131] num cells visited: 8, num cells computed: 17
+[INFO 2022-12-12 22:52:18,131] CODE 1: Success. Optimal adv cell found! Dist: 0.2242
+[INFO 2022-12-12 22:52:18,131] # ==================== SAMPLE 104 =================== #
+[INFO 2022-12-12 22:52:18,131] Upper bound: 0.1966
+[INFO 2022-12-12 22:52:18,163] FINISHED: main loop time: 0.03
+[INFO 2022-12-12 22:52:18,163] num cells visited: 8, num cells computed: 21
+[INFO 2022-12-12 22:52:18,163] CODE 1: Success. Optimal adv cell found! Dist: 0.1949
+[INFO 2022-12-12 22:52:18,163] # ==================== SAMPLE 105 =================== #
+[INFO 2022-12-12 22:52:18,164] Upper bound: 0.8274
+[INFO 2022-12-12 22:52:19,552] FINISHED: main loop time: 1.39
+[INFO 2022-12-12 22:52:19,552] num cells visited: 219, num cells computed: 384
+[INFO 2022-12-12 22:52:19,552] CODE 1: Success. Optimal adv cell found! Dist: 0.7611
+[INFO 2022-12-12 22:52:19,552] # ==================== SAMPLE 106 =================== #
+[INFO 2022-12-12 22:52:19,552] Upper bound: 0.3033
+[INFO 2022-12-12 22:52:19,644] FINISHED: main loop time: 0.09
+[INFO 2022-12-12 22:52:19,644] num cells visited: 15, num cells computed: 41
+[INFO 2022-12-12 22:52:19,644] CODE 1: Success. Optimal adv cell found! Dist: 0.2881
+[INFO 2022-12-12 22:52:19,645] # ==================== SAMPLE 107 =================== #
+[INFO 2022-12-12 22:52:19,645] Upper bound: 0.0911
+[INFO 2022-12-12 22:52:19,662] FINISHED: main loop time: 0.02
+[INFO 2022-12-12 22:52:19,662] num cells visited: 7, num cells computed: 14
+[INFO 2022-12-12 22:52:19,662] CODE 1: Success. Optimal adv cell found! Dist: 0.0899
+[INFO 2022-12-12 22:52:19,662] # ==================== SAMPLE 108 =================== #
+[INFO 2022-12-12 22:52:19,662] Upper bound: 0.0378
+[INFO 2022-12-12 22:52:19,666] FINISHED: main loop time: 0.00
+[INFO 2022-12-12 22:52:19,667] num cells visited: 2, num cells computed: 2
+[INFO 2022-12-12 22:52:19,667] CODE 1: Success. Optimal adv cell found! Dist: 0.0368
+[INFO 2022-12-12 22:52:19,667] # ==================== SAMPLE 109 =================== #
+[INFO 2022-12-12 22:52:19,667] Upper bound: 0.3687
+[INFO 2022-12-12 22:52:19,705] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:19,705] FINISHED: main loop time: 0.04
+[INFO 2022-12-12 22:52:19,705] num cells visited: 10, num cells computed: 33
+[INFO 2022-12-12 22:52:19,705] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:19,705] returning the initial upperbound.
+[INFO 2022-12-12 22:52:19,705] # ==================== SAMPLE 110 =================== #
+[INFO 2022-12-12 22:52:19,706] Upper bound: 0.3236
+[INFO 2022-12-12 22:52:19,733] FINISHED: main loop time: 0.03
+[INFO 2022-12-12 22:52:19,733] num cells visited: 9, num cells computed: 22
+[INFO 2022-12-12 22:52:19,733] CODE 1: Success. Optimal adv cell found! Dist: 0.3144
+[INFO 2022-12-12 22:52:19,733] # ==================== SAMPLE 111 =================== #
+[INFO 2022-12-12 22:52:19,734] Upper bound: 0.4611
+[INFO 2022-12-12 22:52:19,790] FINISHED: main loop time: 0.06
+[INFO 2022-12-12 22:52:19,790] num cells visited: 19, num cells computed: 39
+[INFO 2022-12-12 22:52:19,790] CODE 1: Success. Optimal adv cell found! Dist: 0.4432
+[INFO 2022-12-12 22:52:19,790] # ==================== SAMPLE 112 =================== #
+[INFO 2022-12-12 22:52:19,791] Upper bound: 0.7226
+[INFO 2022-12-12 22:52:19,921] FINISHED: main loop time: 0.13
+[INFO 2022-12-12 22:52:19,921] num cells visited: 37, num cells computed: 41
+[INFO 2022-12-12 22:52:19,922] CODE 1: Success. Optimal adv cell found! Dist: 0.6578
+[INFO 2022-12-12 22:52:19,922] # ==================== SAMPLE 113 =================== #
+[INFO 2022-12-12 22:52:19,922] Upper bound: 0.2235
+[INFO 2022-12-12 22:52:20,000] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:20,000] FINISHED: main loop time: 0.08
+[INFO 2022-12-12 22:52:20,000] num cells visited: 22, num cells computed: 37
+[INFO 2022-12-12 22:52:20,000] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:20,000] returning the initial upperbound.
+[INFO 2022-12-12 22:52:20,000] # ==================== SAMPLE 114 =================== #
+[INFO 2022-12-12 22:52:20,000] Upper bound: 0.4159
+[INFO 2022-12-12 22:52:20,093] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:20,094] FINISHED: main loop time: 0.09
+[INFO 2022-12-12 22:52:20,094] num cells visited: 23, num cells computed: 44
+[INFO 2022-12-12 22:52:20,094] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:20,094] returning the initial upperbound.
+[INFO 2022-12-12 22:52:20,094] # ==================== SAMPLE 115 =================== #
+[INFO 2022-12-12 22:52:20,094] Upper bound: 0.2144
+[INFO 2022-12-12 22:52:20,139] FINISHED: main loop time: 0.04
+[INFO 2022-12-12 22:52:20,139] num cells visited: 11, num cells computed: 29
+[INFO 2022-12-12 22:52:20,139] CODE 1: Success. Optimal adv cell found! Dist: 0.1967
+[INFO 2022-12-12 22:52:20,139] # ==================== SAMPLE 116 =================== #
+[INFO 2022-12-12 22:52:20,139] Upper bound: 0.4043
+[INFO 2022-12-12 22:52:20,256] FINISHED: main loop time: 0.12
+[INFO 2022-12-12 22:52:20,256] num cells visited: 22, num cells computed: 33
+[INFO 2022-12-12 22:52:20,256] CODE 1: Success. Optimal adv cell found! Dist: 0.3996
+[INFO 2022-12-12 22:52:20,256] # ==================== SAMPLE 117 =================== #
+[INFO 2022-12-12 22:52:20,256] Upper bound: 0.3188
+[INFO 2022-12-12 22:52:20,488] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:20,489] FINISHED: main loop time: 0.23
+[INFO 2022-12-12 22:52:20,489] num cells visited: 35, num cells computed: 66
+[INFO 2022-12-12 22:52:20,489] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:20,489] returning the initial upperbound.
+[INFO 2022-12-12 22:52:20,489] # ==================== SAMPLE 118 =================== #
+[INFO 2022-12-12 22:52:20,489] Upper bound: 0.0765
+[INFO 2022-12-12 22:52:20,493] FINISHED: main loop time: 0.00
+[INFO 2022-12-12 22:52:20,493] num cells visited: 2, num cells computed: 2
+[INFO 2022-12-12 22:52:20,493] CODE 1: Success. Optimal adv cell found! Dist: 0.0735
+[INFO 2022-12-12 22:52:20,493] # ==================== SAMPLE 119 =================== #
+[INFO 2022-12-12 22:52:20,493] Upper bound: 0.1758
+[INFO 2022-12-12 22:52:20,509] FINISHED: main loop time: 0.02
+[INFO 2022-12-12 22:52:20,509] num cells visited: 4, num cells computed: 14
+[INFO 2022-12-12 22:52:20,509] CODE 1: Success. Optimal adv cell found! Dist: 0.1735
+[INFO 2022-12-12 22:52:20,509] # ==================== SAMPLE 120 =================== #
+[INFO 2022-12-12 22:52:20,509] Upper bound: 0.1296
+[INFO 2022-12-12 22:52:20,519] FINISHED: main loop time: 0.01
+[INFO 2022-12-12 22:52:20,519] num cells visited: 2, num cells computed: 3
+[INFO 2022-12-12 22:52:20,519] CODE 1: Success. Optimal adv cell found! Dist: 0.1200
+[INFO 2022-12-12 22:52:20,519] # ==================== SAMPLE 121 =================== #
+[INFO 2022-12-12 22:52:20,519] Upper bound: 0.0661
+[INFO 2022-12-12 22:52:20,524] FINISHED: main loop time: 0.00
+[INFO 2022-12-12 22:52:20,524] num cells visited: 2, num cells computed: 2
+[INFO 2022-12-12 22:52:20,524] CODE 1: Success. Optimal adv cell found! Dist: 0.0648
+[INFO 2022-12-12 22:52:20,524] # ==================== SAMPLE 122 =================== #
+[INFO 2022-12-12 22:52:20,524] Upper bound: 0.4674
+[INFO 2022-12-12 22:52:20,633] FINISHED: main loop time: 0.11
+[INFO 2022-12-12 22:52:20,633] num cells visited: 33, num cells computed: 39
+[INFO 2022-12-12 22:52:20,633] CODE 1: Success. Optimal adv cell found! Dist: 0.4564
+[INFO 2022-12-12 22:52:20,633] # ==================== SAMPLE 123 =================== #
+[INFO 2022-12-12 22:52:20,633] Upper bound: 0.2682
+[INFO 2022-12-12 22:52:20,684] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:20,684] FINISHED: main loop time: 0.05
+[INFO 2022-12-12 22:52:20,684] num cells visited: 15, num cells computed: 35
+[INFO 2022-12-12 22:52:20,684] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:20,684] returning the initial upperbound.
+[INFO 2022-12-12 22:52:20,684] # ==================== SAMPLE 124 =================== #
+[INFO 2022-12-12 22:52:20,684] Upper bound: 0.2196
+[INFO 2022-12-12 22:52:20,700] FINISHED: main loop time: 0.02
+[INFO 2022-12-12 22:52:20,700] num cells visited: 5, num cells computed: 11
+[INFO 2022-12-12 22:52:20,700] CODE 1: Success. Optimal adv cell found! Dist: 0.1924
+[INFO 2022-12-12 22:52:20,701] # ==================== SAMPLE 125 =================== #
+[INFO 2022-12-12 22:52:20,701] Upper bound: 0.5025
+[INFO 2022-12-12 22:52:21,576] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:21,576] FINISHED: main loop time: 0.88
+[INFO 2022-12-12 22:52:21,576] num cells visited: 147, num cells computed: 238
+[INFO 2022-12-12 22:52:21,576] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:21,576] returning the initial upperbound.
+[INFO 2022-12-12 22:52:21,576] # ==================== SAMPLE 126 =================== #
+[INFO 2022-12-12 22:52:21,576] Upper bound: 0.1400
+[INFO 2022-12-12 22:52:21,596] FINISHED: main loop time: 0.02
+[INFO 2022-12-12 22:52:21,596] num cells visited: 6, num cells computed: 14
+[INFO 2022-12-12 22:52:21,596] CODE 1: Success. Optimal adv cell found! Dist: 0.1329
+[INFO 2022-12-12 22:52:21,596] # ==================== SAMPLE 127 =================== #
+[INFO 2022-12-12 22:52:21,596] Upper bound: 0.5244
+[INFO 2022-12-12 22:52:21,993] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:21,993] FINISHED: main loop time: 0.40
+[INFO 2022-12-12 22:52:21,993] num cells visited: 71, num cells computed: 125
+[INFO 2022-12-12 22:52:21,993] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:21,993] returning the initial upperbound.
+[INFO 2022-12-12 22:52:21,994] # ==================== SAMPLE 128 =================== #
+[INFO 2022-12-12 22:52:21,994] Upper bound: 0.2004
+[INFO 2022-12-12 22:52:22,085] FINISHED: main loop time: 0.09
+[INFO 2022-12-12 22:52:22,085] num cells visited: 8, num cells computed: 21
+[INFO 2022-12-12 22:52:22,085] CODE 1: Success. Optimal adv cell found! Dist: 0.1931
+[INFO 2022-12-12 22:52:22,085] # ==================== SAMPLE 129 =================== #
+[INFO 2022-12-12 22:52:22,085] Upper bound: 0.2267
+[INFO 2022-12-12 22:52:22,146] FINISHED: main loop time: 0.06
+[INFO 2022-12-12 22:52:22,146] num cells visited: 8, num cells computed: 14
+[INFO 2022-12-12 22:52:22,146] CODE 1: Success. Optimal adv cell found! Dist: 0.2000
+[INFO 2022-12-12 22:52:22,146] # ==================== SAMPLE 130 =================== #
+[INFO 2022-12-12 22:52:22,146] Upper bound: 0.0069
+[INFO 2022-12-12 22:52:22,154] FINISHED: main loop time: 0.01
+[INFO 2022-12-12 22:52:22,154] num cells visited: 2, num cells computed: 2
+[INFO 2022-12-12 22:52:22,154] CODE 1: Success. Optimal adv cell found! Dist: 0.0031
+[INFO 2022-12-12 22:52:22,154] # ==================== SAMPLE 131 =================== #
+[INFO 2022-12-12 22:52:22,154] Upper bound: 0.6106
+[INFO 2022-12-12 22:52:22,853] FINISHED: main loop time: 0.70
+[INFO 2022-12-12 22:52:22,853] num cells visited: 137, num cells computed: 209
+[INFO 2022-12-12 22:52:22,853] CODE 1: Success. Optimal adv cell found! Dist: 0.5908
+[INFO 2022-12-12 22:52:22,853] # ==================== SAMPLE 132 =================== #
+[INFO 2022-12-12 22:52:22,854] Upper bound: 0.0913
+[INFO 2022-12-12 22:52:22,863] FINISHED: main loop time: 0.01
+[INFO 2022-12-12 22:52:22,864] num cells visited: 3, num cells computed: 4
+[INFO 2022-12-12 22:52:22,864] CODE 1: Success. Optimal adv cell found! Dist: 0.0897
+[INFO 2022-12-12 22:52:22,864] # ==================== SAMPLE 133 =================== #
+[INFO 2022-12-12 22:52:22,864] Upper bound: 0.2815
+[INFO 2022-12-12 22:52:22,938] FINISHED: main loop time: 0.07
+[INFO 2022-12-12 22:52:22,938] num cells visited: 20, num cells computed: 42
+[INFO 2022-12-12 22:52:22,938] CODE 1: Success. Optimal adv cell found! Dist: 0.2778
+[INFO 2022-12-12 22:52:22,938] # ==================== SAMPLE 134 =================== #
+[INFO 2022-12-12 22:52:22,938] Upper bound: 0.3254
+[INFO 2022-12-12 22:52:22,962] FINISHED: main loop time: 0.02
+[INFO 2022-12-12 22:52:22,962] num cells visited: 8, num cells computed: 16
+[INFO 2022-12-12 22:52:22,963] CODE 1: Success. Optimal adv cell found! Dist: 0.3118
+[INFO 2022-12-12 22:52:22,963] # ==================== SAMPLE 135 =================== #
+[INFO 2022-12-12 22:52:22,963] Upper bound: 0.4222
+[INFO 2022-12-12 22:52:23,480] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:23,481] FINISHED: main loop time: 0.52
+[INFO 2022-12-12 22:52:23,481] num cells visited: 92, num cells computed: 157
+[INFO 2022-12-12 22:52:23,481] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:23,481] returning the initial upperbound.
+[INFO 2022-12-12 22:52:23,481] # ==================== SAMPLE 136 =================== #
+[INFO 2022-12-12 22:52:23,481] Upper bound: 0.0438
+[INFO 2022-12-12 22:52:23,488] FINISHED: main loop time: 0.01
+[INFO 2022-12-12 22:52:23,488] num cells visited: 2, num cells computed: 2
+[INFO 2022-12-12 22:52:23,488] CODE 1: Success. Optimal adv cell found! Dist: 0.0424
+[INFO 2022-12-12 22:52:23,488] # ==================== SAMPLE 137 =================== #
+[INFO 2022-12-12 22:52:23,488] Upper bound: 0.0076
+[INFO 2022-12-12 22:52:23,494] FINISHED: main loop time: 0.01
+[INFO 2022-12-12 22:52:23,494] num cells visited: 2, num cells computed: 2
+[INFO 2022-12-12 22:52:23,494] CODE 1: Success. Optimal adv cell found! Dist: 0.0033
+[INFO 2022-12-12 22:52:23,494] # ==================== SAMPLE 138 =================== #
+[INFO 2022-12-12 22:52:23,494] Upper bound: 0.2239
+[INFO 2022-12-12 22:52:23,540] FINISHED: main loop time: 0.05
+[INFO 2022-12-12 22:52:23,540] num cells visited: 11, num cells computed: 27
+[INFO 2022-12-12 22:52:23,540] CODE 1: Success. Optimal adv cell found! Dist: 0.1740
+[INFO 2022-12-12 22:52:23,540] # ==================== SAMPLE 139 =================== #
+[INFO 2022-12-12 22:52:23,540] Upper bound: 0.1206
+[INFO 2022-12-12 22:52:23,549] FINISHED: main loop time: 0.01
+[INFO 2022-12-12 22:52:23,549] num cells visited: 3, num cells computed: 4
+[INFO 2022-12-12 22:52:23,549] CODE 1: Success. Optimal adv cell found! Dist: 0.1202
+[INFO 2022-12-12 22:52:23,549] # ==================== SAMPLE 140 =================== #
+[INFO 2022-12-12 22:52:23,549] Upper bound: 0.3008
+[INFO 2022-12-12 22:52:23,652] FINISHED: main loop time: 0.10
+[INFO 2022-12-12 22:52:23,653] num cells visited: 23, num cells computed: 46
+[INFO 2022-12-12 22:52:23,653] CODE 1: Success. Optimal adv cell found! Dist: 0.2901
+[INFO 2022-12-12 22:52:23,653] # ==================== SAMPLE 141 =================== #
+[INFO 2022-12-12 22:52:23,653] Upper bound: 0.2855
+[INFO 2022-12-12 22:52:23,761] FINISHED: main loop time: 0.11
+[INFO 2022-12-12 22:52:23,761] num cells visited: 25, num cells computed: 44
+[INFO 2022-12-12 22:52:23,761] CODE 1: Success. Optimal adv cell found! Dist: 0.2752
+[INFO 2022-12-12 22:52:23,761] # ==================== SAMPLE 142 =================== #
+[INFO 2022-12-12 22:52:23,761] Upper bound: 0.4471
+[INFO 2022-12-12 22:52:23,857] FINISHED: main loop time: 0.09
+[INFO 2022-12-12 22:52:23,857] num cells visited: 26, num cells computed: 38
+[INFO 2022-12-12 22:52:23,857] CODE 1: Success. Optimal adv cell found! Dist: 0.4344
+[INFO 2022-12-12 22:52:23,857] # ==================== SAMPLE 143 =================== #
+[INFO 2022-12-12 22:52:23,857] Upper bound: 0.2914
+[INFO 2022-12-12 22:52:23,870] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:23,870] FINISHED: main loop time: 0.01
+[INFO 2022-12-12 22:52:23,870] num cells visited: 6, num cells computed: 7
+[INFO 2022-12-12 22:52:23,870] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:23,870] returning the initial upperbound.
+[INFO 2022-12-12 22:52:23,870] # ==================== SAMPLE 144 =================== #
+[INFO 2022-12-12 22:52:23,870] Upper bound: 0.6605
+[INFO 2022-12-12 22:52:23,992] FINISHED: main loop time: 0.12
+[INFO 2022-12-12 22:52:23,992] num cells visited: 26, num cells computed: 38
+[INFO 2022-12-12 22:52:23,992] CODE 1: Success. Optimal adv cell found! Dist: 0.5904
+[INFO 2022-12-12 22:52:23,992] # ==================== SAMPLE 145 =================== #
+[INFO 2022-12-12 22:52:23,992] Upper bound: 0.1477
+[INFO 2022-12-12 22:52:24,017] FINISHED: main loop time: 0.03
+[INFO 2022-12-12 22:52:24,018] num cells visited: 7, num cells computed: 13
+[INFO 2022-12-12 22:52:24,018] CODE 1: Success. Optimal adv cell found! Dist: 0.1441
+[INFO 2022-12-12 22:52:24,018] # ==================== SAMPLE 146 =================== #
+[INFO 2022-12-12 22:52:24,018] Upper bound: 0.2160
+[INFO 2022-12-12 22:52:24,045] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:24,046] FINISHED: main loop time: 0.03
+[INFO 2022-12-12 22:52:24,046] num cells visited: 7, num cells computed: 19
+[INFO 2022-12-12 22:52:24,046] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:24,046] returning the initial upperbound.
+[INFO 2022-12-12 22:52:24,046] # ==================== SAMPLE 147 =================== #
+[INFO 2022-12-12 22:52:24,046] Upper bound: 0.2884
+[INFO 2022-12-12 22:52:24,085] FINISHED: main loop time: 0.04
+[INFO 2022-12-12 22:52:24,086] num cells visited: 13, num cells computed: 30
+[INFO 2022-12-12 22:52:24,086] CODE 1: Success. Optimal adv cell found! Dist: 0.2719
+[INFO 2022-12-12 22:52:24,086] # ==================== SAMPLE 148 =================== #
+[INFO 2022-12-12 22:52:24,086] Upper bound: 0.5059
+[INFO 2022-12-12 22:52:24,202] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:24,202] FINISHED: main loop time: 0.12
+[INFO 2022-12-12 22:52:24,202] num cells visited: 31, num cells computed: 35
+[INFO 2022-12-12 22:52:24,202] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:24,202] returning the initial upperbound.
+[INFO 2022-12-12 22:52:24,202] # ==================== SAMPLE 149 =================== #
+[INFO 2022-12-12 22:52:24,203] Upper bound: 0.4307
+[INFO 2022-12-12 22:52:24,744] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:24,744] FINISHED: main loop time: 0.54
+[INFO 2022-12-12 22:52:24,744] num cells visited: 73, num cells computed: 111
+[INFO 2022-12-12 22:52:24,744] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:24,744] returning the initial upperbound.
+[INFO 2022-12-12 22:52:24,744] # ==================== SAMPLE 150 =================== #
+[INFO 2022-12-12 22:52:24,744] Upper bound: 0.2408
+[INFO 2022-12-12 22:52:24,832] FINISHED: main loop time: 0.09
+[INFO 2022-12-12 22:52:24,833] num cells visited: 11, num cells computed: 41
+[INFO 2022-12-12 22:52:24,833] CODE 1: Success. Optimal adv cell found! Dist: 0.2377
+[INFO 2022-12-12 22:52:24,833] # ==================== SAMPLE 151 =================== #
+[INFO 2022-12-12 22:52:24,833] Upper bound: 0.1443
+[INFO 2022-12-12 22:52:24,866] FINISHED: main loop time: 0.03
+[INFO 2022-12-12 22:52:24,866] num cells visited: 10, num cells computed: 15
+[INFO 2022-12-12 22:52:24,866] CODE 1: Success. Optimal adv cell found! Dist: 0.1307
+[INFO 2022-12-12 22:52:24,866] # ==================== SAMPLE 152 =================== #
+[INFO 2022-12-12 22:52:24,866] Upper bound: 0.2213
+[INFO 2022-12-12 22:52:24,888] FINISHED: main loop time: 0.02
+[INFO 2022-12-12 22:52:24,888] num cells visited: 6, num cells computed: 17
+[INFO 2022-12-12 22:52:24,888] CODE 1: Success. Optimal adv cell found! Dist: 0.2083
+[INFO 2022-12-12 22:52:24,888] # ==================== SAMPLE 153 =================== #
+[INFO 2022-12-12 22:52:24,888] Upper bound: 0.1479
+[INFO 2022-12-12 22:52:24,916] FINISHED: main loop time: 0.03
+[INFO 2022-12-12 22:52:24,916] num cells visited: 8, num cells computed: 14
+[INFO 2022-12-12 22:52:24,916] CODE 1: Success. Optimal adv cell found! Dist: 0.1415
+[INFO 2022-12-12 22:52:24,916] # ==================== SAMPLE 154 =================== #
+[INFO 2022-12-12 22:52:24,916] Upper bound: 0.6637
+[INFO 2022-12-12 22:52:25,443] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:25,443] FINISHED: main loop time: 0.53
+[INFO 2022-12-12 22:52:25,443] num cells visited: 41, num cells computed: 115
+[INFO 2022-12-12 22:52:25,443] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:25,443] returning the initial upperbound.
+[INFO 2022-12-12 22:52:25,444] # ==================== SAMPLE 155 =================== #
+[INFO 2022-12-12 22:52:25,444] Upper bound: 0.0153
+[INFO 2022-12-12 22:52:25,451] FINISHED: main loop time: 0.01
+[INFO 2022-12-12 22:52:25,452] num cells visited: 2, num cells computed: 2
+[INFO 2022-12-12 22:52:25,452] CODE 1: Success. Optimal adv cell found! Dist: 0.0142
+[INFO 2022-12-12 22:52:25,452] # ==================== SAMPLE 156 =================== #
+[INFO 2022-12-12 22:52:25,452] Upper bound: 0.2268
+[INFO 2022-12-12 22:52:25,620] FINISHED: main loop time: 0.17
+[INFO 2022-12-12 22:52:25,620] num cells visited: 10, num cells computed: 21
+[INFO 2022-12-12 22:52:25,620] CODE 1: Success. Optimal adv cell found! Dist: 0.2188
+[INFO 2022-12-12 22:52:25,620] # ==================== SAMPLE 157 =================== #
+[INFO 2022-12-12 22:52:25,620] Upper bound: 0.1851
+[INFO 2022-12-12 22:52:25,727] FINISHED: main loop time: 0.11
+[INFO 2022-12-12 22:52:25,727] num cells visited: 14, num cells computed: 34
+[INFO 2022-12-12 22:52:25,727] CODE 1: Success. Optimal adv cell found! Dist: 0.1793
+[INFO 2022-12-12 22:52:25,727] # ==================== SAMPLE 158 =================== #
+[INFO 2022-12-12 22:52:25,727] Upper bound: 0.5118
+[INFO 2022-12-12 22:52:25,878] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:25,878] FINISHED: main loop time: 0.15
+[INFO 2022-12-12 22:52:25,878] num cells visited: 30, num cells computed: 34
+[INFO 2022-12-12 22:52:25,878] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:25,878] returning the initial upperbound.
+[INFO 2022-12-12 22:52:25,878] # ==================== SAMPLE 159 =================== #
+[INFO 2022-12-12 22:52:25,878] Upper bound: 0.2453
+[INFO 2022-12-12 22:52:25,981] FINISHED: main loop time: 0.10
+[INFO 2022-12-12 22:52:25,982] num cells visited: 9, num cells computed: 21
+[INFO 2022-12-12 22:52:25,982] CODE 1: Success. Optimal adv cell found! Dist: 0.2409
+[INFO 2022-12-12 22:52:25,982] # ==================== SAMPLE 160 =================== #
+[INFO 2022-12-12 22:52:25,982] Upper bound: 0.2233
+[INFO 2022-12-12 22:52:26,025] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:26,025] FINISHED: main loop time: 0.04
+[INFO 2022-12-12 22:52:26,025] num cells visited: 8, num cells computed: 29
+[INFO 2022-12-12 22:52:26,025] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:26,025] returning the initial upperbound.
+[INFO 2022-12-12 22:52:26,025] # ==================== SAMPLE 161 =================== #
+[INFO 2022-12-12 22:52:26,025] Upper bound: 0.3733
+[INFO 2022-12-12 22:52:26,025] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:26,025] FINISHED: main loop time: 0.00
+[INFO 2022-12-12 22:52:26,026] num cells visited: 1, num cells computed: 1
+[INFO 2022-12-12 22:52:26,026] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:26,026] returning the initial upperbound.
+[INFO 2022-12-12 22:52:26,026] # ==================== SAMPLE 162 =================== #
+[INFO 2022-12-12 22:52:26,026] Upper bound: 0.7487
+[INFO 2022-12-12 22:52:26,449] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:26,449] FINISHED: main loop time: 0.42
+[INFO 2022-12-12 22:52:26,449] num cells visited: 58, num cells computed: 135
+[INFO 2022-12-12 22:52:26,449] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:26,449] returning the initial upperbound.
+[INFO 2022-12-12 22:52:26,450] # ==================== SAMPLE 163 =================== #
+[INFO 2022-12-12 22:52:26,450] Upper bound: 0.3800
+[INFO 2022-12-12 22:52:26,470] PQ is empty. No facet to pop.
+[INFO 2022-12-12 22:52:26,470] FINISHED: main loop time: 0.02
+[INFO 2022-12-12 22:52:26,470] num cells visited: 7, num cells computed: 8
+[INFO 2022-12-12 22:52:26,470] CODE 0: No valid adv cell found.
+[INFO 2022-12-12 22:52:26,470] returning the initial upperbound.
+[INFO 2022-12-12 22:52:26,470] # ==================== SAMPLE 164 =================== #
+[INFO 2022-12-12 22:52:26,470] Upper bound: 0.2646
+[INFO 2022-12-12 22:52:26,525] FINISHED: main loop time: 0.06
+[INFO 2022-12-12 22:52:26,525] num cells visited: 12, num cells computed: 37
+[INFO 2022-12-12 22:52:26,525] CODE 1: Success. Optimal adv cell found! Dist: 0.2530
+[INFO 2022-12-12 22:52:26,526] Total runtime: 149.11s
+[INFO 2022-12-12 22:52:26,526] mean: 0.3036, median: 0.2752, all: [0.28585967, 3.23966e-06, 0.16320011, 0.28876966, 0.26527107, 0.050454035, 0.3748021, 0.35522866, 0.27689043, 0.4857552, 0.026427265, 0.09780927, 0.35805297, 0.004918857, 0.16380693, 0.4606399, 0.49685687, 0.11422982, 0.2069829, 0.44799957, 0.99453086, 0.29143575, 0.04423872, 0.2521095, 0.35808244, 0.27467504, 0.52694815, 0.6012183, 0.50489455, 0.37267268, 0.17554311, 0.57501334, 0.17934059, 0.118065774, 0.3051017, 0.50033325, 0.03590375, 0.074897125, 0.39794493, 0.20493284, 0.08737012, 0.22184317, 0.5254598, 0.034860983, 0.09903772, 0.21073568, 0.5778041, 0.775181, 0.4751016, 0.49508363, 0.17872542, 0.1410137, 0.2739692, 0.27162457, 0.13566548, 0.45092165, 0.29436776, 0.20564188, 0.37820545, 0.3476777, 0.32884747, 0.3039412, 0.48692432, 0.4899286, 0.111695096, 0.5289891, 0.44530353, 0.17974912, 0.45934275, 0.17404886, 0.39911664, 0.26083434, 0.21342622, 0.21388313, 0.37862864, 0.28874463, 0.6135517, 0.2823875, 0.5017446, 0.23801951, 0.4375523, 0.13705567, 0.17842036, 0.10350253, 0.5839384, 0.50092745, 0.5771865, 0.4928512, 0.20315538, 0.099139825, 0.18029295, 0.24140711, 0.08130747, 0.38284382, 0.4487251, 0.31541392, 0.292003, 0.25758272, 0.5036568, 0.5651832, 0.22609824, 0.40941498, 0.24007049, 0.22415647, 0.19490026, 0.7610895, 0.28808123, 0.08994808, 0.036820292, 0.36869025, 0.3144122, 0.44323933, 0.657757, 0.22347349, 0.41594383, 0.19669384, 0.3995821, 0.3187518, 0.07353357, 0.17353043, 0.11998928, 0.06475208, 0.45636404, 0.2681643, 0.19239272, 0.50251114, 0.13287362, 0.5244199, 0.19305412, 0.20004107, 0.0030765277, 0.590783, 0.08970994, 0.27777946, 0.31180337, 0.4221575, 0.042437993, 0.003340546, 0.17402957, 0.12024274, 0.29013732, 0.27517328, 0.4343999, 0.29136324, 0.59043354, 0.14405942, 0.21603392, 0.2718658, 0.50593406, 0.43070245, 0.23767808, 0.1306647, 0.20828198, 0.14145333, 0.6636549, 0.014175607, 0.21878466, 0.17933257, 0.511808, 0.24093561, 0.2233183, 0.37331358, 0.74871737, 0.3799516, 0.2529719]
+[INFO 2022-12-12 22:52:26,526] exit code: [0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1]
+[INFO 2022-12-12 22:52:26,527] Exit code: 50, 115, 0.
+[INFO 2022-12-12 22:52:26,527] Initialized mean of upperbound: 0.3165
+[INFO 2022-12-12 22:52:26,558] Failed sample number: 50
+[INFO 2022-12-12 22:52:26,558] Success sample number: 115
+[INFO 2022-12-12 22:52:26,558] Success rate: 0.6970

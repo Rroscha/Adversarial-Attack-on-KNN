@@ -116,6 +116,10 @@ class AttackModel:
             are not found, return those inputs.
         """
 
+        self.guide_reps = {}
+        self.thres = None
+        self.coeff = None
+
         min_ = torch.tensor(0., device=self.device)
         max_ = torch.tensor(1., device=self.device)
         if max_linf is not None:

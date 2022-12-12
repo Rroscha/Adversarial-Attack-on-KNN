@@ -239,7 +239,7 @@ if __name__ == '__main__':
         'partial': False,
         'label_domain': (1, 7),
 
-        'num_test': 20,  # The number of samples in test set you want to use
+        'num_test': 200,  # The number of samples in test set you want to use
 
         'init_ub': True,  # Initialize upper bound for geo
 

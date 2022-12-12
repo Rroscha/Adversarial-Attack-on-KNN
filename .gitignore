@@ -1,2 +1,4 @@
 venv
 .idea
+AMD/Dataset/train
+AMD/Dataset/test
